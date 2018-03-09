@@ -296,6 +296,6 @@ using **vue.js** & **socket.io**
 14. 자유롭게 **CSS**를 작성해주면 완료!
 
 15. example
-    ![6](https://user-images.githubusercontent.com/35247295/37221258-a711ff50-240c-11e8-9433-d097ddbf393e.gif)
 
-      
+      ![6](https://user-images.githubusercontent.com/35247295/37221258-a711ff50-240c-11e8-9433-d097ddbf393e.gif)
+
