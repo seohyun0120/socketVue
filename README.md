@@ -7,17 +7,12 @@ using **vue.js** & **socket.io**
 1. 프로젝트 폴더를 하나 만들기
    + ex(socketVue)
 2. terminal에 프로젝트 폴더를 열어준다.
-
-
-
 3. $ **npm init**
    - 추가하고싶은 내용들을 추가한다.
    - package.json 파일이 추가된다.
 4. $ **npm install —save express**
    - 서버를 구현해준다.
-
-
-
+   <br>
 5. 서버와의 통신을 위한 코드 작성
 
    #### src/server.js
@@ -39,7 +34,7 @@ using **vue.js** & **socket.io**
    ~~~
 
    ​
-
+   <br>
 6. $ **npm install nodemon -g**
 
    * 서버를 수정하면 새로고침 버튼을 누르지 않아도 자동 새로고침 된다.
@@ -49,17 +44,12 @@ using **vue.js** & **socket.io**
    * npm 1.0 버전 이상일 경우, 커맨드라인에서 명령어를 사용할 것이기 때문에 -g 글로벌 설치를 해주자.
 
    <img width="843" alt="1" src="https://user-images.githubusercontent.com/35247295/37221137-3d554874-240c-11e8-8b71-b65605698d0b.png">
-
-
-
+   <br>
 7. **localhost:8000** 에 접속해보자.
 
    + hello world 라고 적힌 것을 볼 수 있다.
    <img width="228" alt="2" src="https://user-images.githubusercontent.com/35247295/37221208-79ddffa2-240c-11e8-825d-1d6228da5914.png">
-
-
-
-
+   <br>
 8. **fs** 라이브러리를 사용해서 파일을 직접 읽어와보자.
 
    #### src/server.js
@@ -93,15 +83,13 @@ using **vue.js** & **socket.io**
    <img width="226" alt="3" src="https://user-images.githubusercontent.com/35247295/37221222-89a5daa4-240c-11e8-8244-dce5ba3560dd.png">
 
    ​
-
+<br>
 9. $ **npm install —save socket.io**
 
    - **socket.io** 는 java나 php에서 어렵게 동작하던 socket기술을 매우 쉽고 빠르게 채팅앱을 구현할 수 있도록 만들어진 javascript library이다.
-
-     [socket.io document](https://socket.io/)
+   - [socket.io document](https://socket.io/)
      
-     
-
+<br>
 10. 설치한 socket.io 라이브러리를 직접 사용해보자
 
       #### src/server.js
@@ -137,9 +125,7 @@ using **vue.js** & **socket.io**
 
         이를 확인하기위해 console.log를 찍어 실행되는지 확인해본다.
      
-
-
-
+<br>
 11. [클라이언트] user connection 확인
 
     #### Web/index.html
@@ -171,8 +157,7 @@ using **vue.js** & **socket.io**
 
     <img width="598" alt="4" src="https://user-images.githubusercontent.com/35247295/37221233-96dea0a2-240c-11e8-901f-3dff6e60767e.png">
 
-
-
+<br>
 11. [클라이언트] user disconnection 확인
 
     #### src/server.js
@@ -192,7 +177,7 @@ using **vue.js** & **socket.io**
     2. 콘솔창에 **"a user disconnnected"** 라는 문구가 보이면 성공!
 
     <img width="598" alt="5" src="https://user-images.githubusercontent.com/35247295/37221257-a560b78c-240c-11e8-8557-e3a2907b04ee.png">
-    
+<br>  
 12. Vue를 사용해보자
 
     $ **npm install vue**
@@ -207,8 +192,7 @@ using **vue.js** & **socket.io**
     <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
     ~~~
 
-
-
+<br>
 13. 보낸 메세지를 받아오기
 
     [클라이언트]
@@ -293,9 +277,9 @@ using **vue.js** & **socket.io**
     + 메세지를 보낸 사람을 포함해서 모두에게 메세지를 보낼 때 사용된다. 
 
 
-
+<br>
 14. 자유롭게 **CSS**를 작성해주면 완료!
-
+<br>
 15. example
 
       ![6](https://user-images.githubusercontent.com/35247295/37221258-a711ff50-240c-11e8-9433-d097ddbf393e.gif)
