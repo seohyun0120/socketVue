@@ -37,9 +37,9 @@
 
       </ul>
       <input type="text" id="inputChat" @keyup.13="ChatSend"/>
-      <!-- @keyup.13은 엔터 -->
+      <!-- @keyup.13 means 'enter key' -->
       <button @click.1="ChatSend" class="w3-button w3-indigo">Send</button>
-      <!-- 왼쪽클릭을 할 경우 ChatSend method 실행 -->
+      <!-- left-click, ChatSend method -->
     </div>
   </body>
 
@@ -59,7 +59,7 @@
 
       methods : {
         ChatSend : function(){
-          // input이 없을 경우
+          // if there is no input
           if($("#inputChat").val() == ""){
               return false
           }
