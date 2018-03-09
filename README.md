@@ -1,4 +1,4 @@
-# Simple WebChat
+# Simple WebChat (3/10 update)
 
 using **vue.js** & **socket.io**
 
@@ -48,7 +48,8 @@ using **vue.js** & **socket.io**
 
    * npm 1.0 버전 이상일 경우, 커맨드라인에서 명령어를 사용할 것이기 때문에 -g 글로벌 설치를 해주자.
 
-     <img width="843" alt="1" src="https://user-images.githubusercontent.com/35247295/37221137-3d554874-240c-11e8-8b71-b65605698d0b.png">
+   <img width="843" alt="1" src="https://user-images.githubusercontent.com/35247295/37221137-3d554874-240c-11e8-8b71-b65605698d0b.png">
+
 
 
 7. **localhost:8000** 에 접속해보자.
@@ -97,43 +98,44 @@ using **vue.js** & **socket.io**
 
    - **socket.io** 는 java나 php에서 어렵게 동작하던 socket기술을 매우 쉽고 빠르게 채팅앱을 구현할 수 있도록 만들어진 javascript library이다.
 
-     [socket.io]: https://socket.io/	"자세한 도큐먼트는 링크를 참고하자"
+     [socket.io document](https://socket.io/)
+     
      
 
 10. 설치한 socket.io 라이브러리를 직접 사용해보자
 
-   #### src/server.js
+      #### src/server.js
 
-   ~~~js
-   var express = require('express');
-   var app = express();
-   var server = require('http').createServer(app);
-   var fs = require('fs');
-   var io = require('socket.io')(server);	//추가
-   var port = 8000;
+      ~~~js
+      var express = require('express');
+      var app = express();
+      var server = require('http').createServer(app);
+      var fs = require('fs');
+      var io = require('socket.io')(server);	//추가
+      var port = 8000;
 
-   //추가
-   app.use('/lib', express.static(__dirname + "/lib"));	
+      //추가
+      app.use('/lib', express.static(__dirname + "/lib"));	
 
-   app.get('/', function(req,res){
-     fs.readFile('./Web/index.html',function(error, data){
-       res.end(data);
-     });
-   });
+      app.get('/', function(req,res){
+        fs.readFile('./Web/index.html',function(error, data){
+          res.end(data);
+        });
+      });
 
-   //추가
-   io.on('connection',function(socket){
-       console.log('a user connected');
-   });
-   ~~~
+      //추가
+      io.on('connection',function(socket){
+          console.log('a user connected');
+      });
+      ~~~
 
-   - 실제로 라이브러리를 사용하기 위해 'lib'폴더 안에 있는 파일을 사용하겠다는 코드를 작성해준다.
+      - 실제로 라이브러리를 사용하기 위해 'lib'폴더 안에 있는 파일을 사용하겠다는 코드를 작성해준다.
 
-     + 만약 경로문제로 인해 실행이 안될 경우, **node_modules**폴더 > **socket.io-client**폴더 > **socket.io.js** 파일을 찾아서 복사 후 src/lib/에 붙어넣어준다.
+        + 만약 경로문제로 인해 실행이 안될 경우, **node_modules**폴더 > **socket.io-client**폴더 > **socket.io.js** 파일을 찾아서 복사 후 src/lib/에 붙어넣어준다.
 
-   - **on.'connection'** 은 콜백함수인데, socket을 반환한다. 
+      - **on.'connection'** 은 콜백함수인데, socket을 반환한다. 
 
-     이를 확인하기위해 console.log를 찍어 실행되는지 확인해본다.
+        이를 확인하기위해 console.log를 찍어 실행되는지 확인해본다.
      
 
 
