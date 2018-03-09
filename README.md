@@ -78,18 +78,16 @@ using **vue.js** & **socket.io**
    </body>
    </html>
    ~~~
-
+   ​
    * 실행해보면 다음과 같은 결과가 나오게된다.
    <img width="226" alt="3" src="https://user-images.githubusercontent.com/35247295/37221222-89a5daa4-240c-11e8-8244-dce5ba3560dd.png">
 
-   ​
-<br>
 9. $ **npm install —save socket.io**
 
    - **socket.io** 는 java나 php에서 어렵게 동작하던 socket기술을 매우 쉽고 빠르게 채팅앱을 구현할 수 있도록 만들어진 javascript library이다.
    - [socket.io document](https://socket.io/)
      
-<br>
+   <br>
 10. 설치한 socket.io 라이브러리를 직접 사용해보자
       #### src/server.js
       ~~~javascript
@@ -146,7 +144,7 @@ using **vue.js** & **socket.io**
     </html>
 
     ~~~
-
+    ​ 
     $ **nodemon src/server.js** 
 
     1. 콘솔창에 **"Hello WebChat Sever! … "** 가 뜨고
@@ -170,7 +168,7 @@ using **vue.js** & **socket.io**
 
     });
     ~~~
-
+    ​
     1. **localhost:8000** 접속을 끊을 경우
     2. 콘솔창에 **"a user disconnnected"** 라는 문구가 보이면 성공!
 
@@ -187,7 +185,7 @@ using **vue.js** & **socket.io**
     <script src="lib/vue.min.js"></script>
     <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
     ~~~
-
+    ​
 <br>
 13. 보낸 메세지를 받아오기
 
@@ -235,7 +233,7 @@ using **vue.js** & **socket.io**
         });
       </script>
     ~~~
-
+    ​
     + **@keyup.13** : input 창에 엔터를 치면 **ChatSend** 메소드 동작
 
     + **@click.1** : 'Send'버튼을 클릭 시 **ChatSend** 메소드 동작
@@ -269,7 +267,7 @@ using **vue.js** & **socket.io**
         });
     });
     ```
-
+    ​
     + 메세지를 보낸 사람을 포함해서 모두에게 메세지를 보낼 때 사용된다. 
 
 
