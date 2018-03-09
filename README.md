@@ -48,11 +48,13 @@ using **vue.js** & **socket.io**
 
    * npm 1.0 버전 이상일 경우, 커맨드라인에서 명령어를 사용할 것이기 때문에 -g 글로벌 설치를 해주자.
 
-     ![1](/Users/Seohyun/Desktop/DailyProj/socketVue 2/1.png)
+     <img width="843" alt="1" src="https://user-images.githubusercontent.com/35247295/37221137-3d554874-240c-11e8-8b71-b65605698d0b.png">
+
 
 7. **localhost:8000** 에 접속해보자.
 
-   + hello world 라고 적힌 것을 볼 수 있다.![2](/Users/Seohyun/Desktop/DailyProj/socketVue 2/2.png)
+   + hello world 라고 적힌 것을 볼 수 있다.
+   <img width="228" alt="2" src="https://user-images.githubusercontent.com/35247295/37221208-79ddffa2-240c-11e8-825d-1d6228da5914.png">
 
 
 
@@ -86,8 +88,8 @@ using **vue.js** & **socket.io**
    </html>
    ~~~
 
-   * 실행해보면 다음과 같은 결과가 나오게된다.![3](/Users/Seohyun/Desktop/DailyProj/socketVue 2/3.png)
-
+   * 실행해보면 다음과 같은 결과가 나오게된다.
+   <img width="226" alt="3" src="https://user-images.githubusercontent.com/35247295/37221222-89a5daa4-240c-11e8-8244-dce5ba3560dd.png">
 
    ​
 
@@ -96,6 +98,7 @@ using **vue.js** & **socket.io**
    - **socket.io** 는 java나 php에서 어렵게 동작하던 socket기술을 매우 쉽고 빠르게 채팅앱을 구현할 수 있도록 만들어진 javascript library이다.
 
      [socket.io]: https://socket.io/	"자세한 도큐먼트는 링크를 참고하자"
+     
 
 10. 설치한 socket.io 라이브러리를 직접 사용해보자
 
@@ -165,7 +168,7 @@ using **vue.js** & **socket.io**
     2. **localhost:8000**에 접속한 후
     3. 콘솔창에 **"a user connected"** 라는 문구가 찍히면 성공!
 
-    ![4](/Users/Seohyun/Desktop/DailyProj/socketVue 2/4.png)
+    <img width="598" alt="4" src="https://user-images.githubusercontent.com/35247295/37221233-96dea0a2-240c-11e8-901f-3dff6e60767e.png">
 
 
 
@@ -187,8 +190,8 @@ using **vue.js** & **socket.io**
     1. **localhost:8000** 접속을 끊을 경우
     2. 콘솔창에 **"a user disconnnected"** 라는 문구가 보이면 성공!
 
-    ![5](/Users/Seohyun/Desktop/DailyProj/socketVue 2/5.png)
-
+    <img width="598" alt="5" src="https://user-images.githubusercontent.com/35247295/37221257-a560b78c-240c-11e8-8557-e3a2907b04ee.png">
+    
 12. Vue를 사용해보자
 
     $ **npm install vue**
@@ -293,5 +296,6 @@ using **vue.js** & **socket.io**
 14. 자유롭게 **CSS**를 작성해주면 완료!
 
 15. example
+    ![6](https://user-images.githubusercontent.com/35247295/37221258-a711ff50-240c-11e8-9433-d097ddbf393e.gif)
 
-    ![6](/Users/Seohyun/Desktop/DailyProj/socketVue 2/6.gif)
+      
