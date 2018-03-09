@@ -134,8 +134,7 @@ using **vue.js** & **socket.io**
    - **on.'connection'** 은 콜백함수인데, socket을 반환한다. 
 
      이를 확인하기위해 console.log를 찍어 실행되는지 확인해본다.
-
-     ​
+     
 
 
 
