@@ -120,8 +120,8 @@ using **vue.js** & **socket.io**
       - **on.'connection'** 은 콜백함수인데, socket을 반환한다. 
 
         이를 확인하기위해 console.log를 찍어 실행되는지 확인해본다.
-     
-<br>
+    <br>
+    
 11. [클라이언트] user connection 확인
 
     #### Web/index.html
@@ -153,8 +153,8 @@ using **vue.js** & **socket.io**
 
     <img width="598" alt="4" src="https://user-images.githubusercontent.com/35247295/37221233-96dea0a2-240c-11e8-901f-3dff6e60767e.png">
 
-<br>
-11. [클라이언트] user disconnection 확인
+   <br>
+12. [클라이언트] user disconnection 확인
 
     #### src/server.js
 
@@ -173,8 +173,8 @@ using **vue.js** & **socket.io**
     2. 콘솔창에 **"a user disconnnected"** 라는 문구가 보이면 성공!
 
     <img width="598" alt="5" src="https://user-images.githubusercontent.com/35247295/37221257-a560b78c-240c-11e8-8557-e3a2907b04ee.png">
-<br>  
-12. Vue를 사용해보자
+   <br>  
+13. Vue를 사용해보자
 
     $ **npm install vue**
 
@@ -186,8 +186,8 @@ using **vue.js** & **socket.io**
     <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
     ~~~
     ​
-<br>
-13. 보낸 메세지를 받아오기
+   <br>
+14. 보낸 메세지를 받아오기
 
     [클라이언트]
 
@@ -271,10 +271,10 @@ using **vue.js** & **socket.io**
     + 메세지를 보낸 사람을 포함해서 모두에게 메세지를 보낼 때 사용된다. 
 
 
-<br>
-14. 자유롭게 **CSS**를 작성해주면 완료!
-<br>
-15. example
+   <br>
+15. 자유롭게 **CSS**를 작성해주면 완료!
+   <br>
+16. example
 
       ![6](https://user-images.githubusercontent.com/35247295/37221258-a711ff50-240c-11e8-9433-d097ddbf393e.gif)
 
