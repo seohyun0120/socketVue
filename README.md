@@ -20,7 +20,7 @@ using **vue.js** & **socket.io**
 
 5. 서버와의 통신을 위한 코드 작성
 
-   ####src/server.js
+   #### src/server.js
 
    ~~~javascript
    var express = require('express');
@@ -59,7 +59,7 @@ using **vue.js** & **socket.io**
 
 8. **fs** 라이브러리를 사용해서 파일을 직접 읽어와보자.
 
-   ####src/server.js
+   #### src/server.js
 
    ~~~javascript
    var fs = require('fs');
