@@ -64,7 +64,7 @@ using **vue.js** & **socket.io**
    });
 
    ~~~
-
+   ​
    #### Web/index.html
 
    ~~~html
@@ -91,10 +91,8 @@ using **vue.js** & **socket.io**
      
 <br>
 10. 설치한 socket.io 라이브러리를 직접 사용해보자
-
       #### src/server.js
-
-      ~~~js
+      ~~~javascript
       var express = require('express');
       var app = express();
       var server = require('http').createServer(app);
@@ -116,7 +114,7 @@ using **vue.js** & **socket.io**
           console.log('a user connected');
       });
       ~~~
-
+      ​
       - 실제로 라이브러리를 사용하기 위해 'lib'폴더 안에 있는 파일을 사용하겠다는 코드를 작성해준다.
 
         + 만약 경로문제로 인해 실행이 안될 경우, **node_modules**폴더 > **socket.io-client**폴더 > **socket.io.js** 파일을 찾아서 복사 후 src/lib/에 붙어넣어준다.
@@ -184,9 +182,7 @@ using **vue.js** & **socket.io**
 
     + 10번과 같이 node_modules/vue/dist/ 에서 **vue.min.js**를 복사한 후 src/lib에 넣어준다.
     + 그 후, 다음과 같은 코드를 head태그 안에 넣어주자
-
-    	#### Web/index.html
-
+    #### Web/index.html
     ~~~html
     <script src="lib/vue.min.js"></script>
     <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
